@@ -5,7 +5,7 @@ function remo() {
   var EndOfRowSheet = getEndOfRowSheet();
   add(
   {
-    // data[0] is Livingroom, [1] is Bedroom
+    // DeviceData[0] is Livingroom, DeviceData[1] is Bedroom
     te:DeviceData[1].newest_events.te.val,  //temperature
     hu:DeviceData[1].newest_events.hu.val,  //humidity
     il:DeviceData[1].newest_events.il.val,  //illuminance
