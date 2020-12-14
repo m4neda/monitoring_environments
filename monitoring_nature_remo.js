@@ -62,6 +62,7 @@ function add(device_data, spreadsheetId, targetrownumber) {
   SpreadsheetApp.openById(spreadsheetId).getSheetByName('log').getRange(targetrownumber, 4).setValue(device_data.il)
 }
 
+// Nature Remo mini only has a temperature sensor.
 function add_temperature(device_data, spreadsheetId, targetrownumber) {
   SpreadsheetApp.openById(spreadsheetId).getSheetByName('log').getRange(targetrownumber, 1).setValue(new Date())
   SpreadsheetApp.openById(spreadsheetId).getSheetByName('log').getRange(targetrownumber, 2).setValue(device_data.te)
